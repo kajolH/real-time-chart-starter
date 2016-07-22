@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predix Real Time Chart</title>
+  <link rel="stylesheet" href="stylesheets/style.css"></link>
+  <script type="text/javascript" src="./smoothie.js"></script>
+  <script type="text/javascript" src="./Timeseries.js"></script>
+</head>
+<body onload="configureTagsTimeseriesData();">
+  <div class="container">
+    <h2>Welcome to a Secure Page.</h2>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/logout">Logout</a>
+      </li>
+    </ul>
+	<div class="div1" style=" width:1000px; height:500px;" >
+	<h1>Predix Real Time Chart</h1>
+	<div class="div2" style=" width:370px; height:400px;float:left" >
+	  <table><tr>
+	  <td>
+        <p> <b>Select the tags </b></p>
+			<select multiple id="tagList" clasms='tag-multiple'>
+			</select>
+      </td>
+	  </tr>
+	  <tr>
+		<td><button type="button" class="timeseries_button" id="timeseries_button" onclick="onclick_machineServiceData();">Submit</button>
+		<p id="errorMessage"></p>
+		</td>
+	  </tr></table>
+
+	</div>
+	<div class="chartarea" style=" width:600px; height:400px;float:right">
+		<canvas id="realtimechart" width="580" height="380"></canvas>
+	</div>
+ </div>
+  </div>
+  </body>
+</html>
