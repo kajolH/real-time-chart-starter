@@ -1,0 +1,15 @@
+---
+applications:
+- name: real-time-chart-starter
+  memory: 128M
+  command: node app.js
+  buildpack: nodejs_buildpack
+services:
+  - eagleappuaa
+  - eagleappts
+env:
+    node_env: cloud
+    uaa_service_label : predix-uaa
+    clientId: eagleappclient
+    base64ClientCredential: ZWFnbGVhcHBjbGllbnQ6ZWFnbGVhcHBjbGllbnQ=
+    

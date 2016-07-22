@@ -1,0 +1,11 @@
+{
+  "development":{
+    "clientId": "eagleappclient",
+    "uaaUri" : "https://c0fb40c9-01f4-457d-a1ff-cd45dce7d7d5.predix-uaa.run.aws-usw02-pr.ice.predix.io",
+    "base64ClientCredential": "ZWFnbGVhcHBjbGllbnQ6ZWFnbGVhcHBjbGllbnQ=",
+    "appUrl": "http://localhost:3000",
+    "timeseries_zone": "526814b9-7e73-461c-9dc0-685ffe3982ec",
+    "timeseriesURL": "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1/datapoints",
+	"windServiceUrl": "https://machine-ws-winddata-timeseries-service.run.aws-usw02-pr.ice.predix.io"
+ }
+}
