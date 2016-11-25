@@ -51,9 +51,7 @@ function updateChart() {
         var res = JSON.parse(uaaRequest.responseText);
         accessToken = res.token_type + ' ' + res.access_token;
 
-        var myTimeSeriesBody = {
-          tags: []
-        };
+        var myTimeSeriesBody = {tags: []};
 
         var timeSeriesGetData = new XMLHttpRequest();
         var datapointsUrl = connectedDeviceConfig.timeseriesURL;
